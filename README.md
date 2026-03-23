@@ -18,3 +18,16 @@ This engine implements a **deterministic state machine** that forces a dialectic
 
 ## Proof of Logic (Live Trace)
 https://smith.langchain.com/public/134c715b-c844-494c-9468-0f67cda4510a/r
+
+---
+## v2.0 Update: Persistent Memory & State Management
+The Socratic Engine now features a **Persistent State Machine** using LangGraph's `MemorySaver`. 
+
+### Key Innovations:
+- **Thread-Based Persistence:** Each conversation is assigned a unique `thread_id`, allowing the Greek and Japanese agents to "remember" previous logic paths and reference them in follow-up inquiries.
+- **State Reducer Architecture:** Implemented `Annotated` state with `operator.add` to ensure a non-destructive message history (Append-only logic).
+- **Deterministic Loop Control:** Added a synchronized `step_count` scoreboard that triggers the Sanskrit Firewall after 3 rounds of dialectic tension, ensuring 100% protection against infinite recursive loops.
+
+### Technical Achievements:
+- Resolved "Agentic Amnesia" by maintaining a shared state across multiple API calls.
+- Optimized cost-governance by enforcing a hard-stop boundary on autonomous agent cycles.
