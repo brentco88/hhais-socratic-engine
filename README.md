@@ -31,3 +31,25 @@ The Socratic Engine now features a **Persistent State Machine** using LangGraph'
 ### Technical Achievements:
 - Resolved "Agentic Amnesia" by maintaining a shared state across multiple API calls.
 - Optimized cost-governance by enforcing a hard-stop boundary on autonomous agent cycles.
+---
+
+## ### The HHaiS Master Prompt Philosophy: Intentional Friction
+
+In a 2026 landscape dominated by "Vending Machine" AI—where speed is prioritized over substance—**HHaiS (Human Heart AI)** takes a different path. We believe that high-stakes leadership requires **Intentional Friction.**
+
+### The "Cognitive Gearbox"
+The HHaiS Master Prompt is architected as a dual-mode system, allowing the user to choose their logical "gear":
+
+1. **Strategic Mode (The Socratic Probe):**
+   - **Default State:** All queries are subjected to a three-agent dialectic (Greek, Japanese, and Sanskrit).
+   - **Purpose:** To drive human curiosity, challenge cognitive biases, and ensure that "Efficiency" never comes at the cost of "Empathy."
+   - **Governance:** A deterministic "Sanskrit Firewall" prevents logic-thrashing and enforces conclusion.
+
+2. **Tactical Mode (The PAL Bypass):**
+   - **Trigger:** Prefixing a query with `PAL:` (Prompt-Action-Logic).
+   - **Purpose:** For low-stakes, high-velocity execution where immediate answers are required.
+   - **Design:** Bypasses the heuristic debate layer for a direct, empathetic summary.
+
+> **"We don't build AI that thinks for you; we build AI that thinks *with* you."**
+
+---
