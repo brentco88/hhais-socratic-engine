@@ -1,26 +1,28 @@
 import requests
-import json
 
-def run_test():
-    url = "http://localhost:8080/inquiry"
-    # This simulates a visionary founder's complex prompt
-    payload = {"user_input": "How do we balance AI efficiency with human empathy in a CSM role?"}
+URL = "http://localhost:8080/inquiry"
+
+print("--- HHaiS Socratic Engine v3 (Interactive Portal) ---")
+print("Instructions: Type 'PAL: [your question]' for fast answers.")
+print("Type 'exit' to quit.\n")
+
+while True:
+    # This line keeps the program open and waiting for YOU
+    user_input = input("You (Human Heart): ")
     
-    print("--- INITIATING SOCRATIC PROBE ---")
+    if user_input.lower() in ['exit', 'quit']:
+        print("Closing Portal...")
+        break
+
     try:
-        response = requests.post(url, json=payload)
+        response = requests.post(URL, json={"user_input": user_input})
         if response.status_code == 200:
             data = response.json()
-            print("\nFINAL LOGIC PATH:")
-            for idx, msg in enumerate(data['messages']):
-                print(f"[{idx}] {msg}")
-            
-            print(f"\nTOTAL STEPS: {data['step_count']}")
-            print("--- VERIFICATION: DETERMINISTIC BOUNDARY HELD ---")
+            print("\n--- The Logic Path ---")
+            for msg in data.get("messages", []):
+                print(f"- {msg}")
+            print("-" * 30 + "\n")
         else:
-            print(f"Error: Server responded with {response.status_code}")
+            print(f"Error: {response.status_code}")
     except Exception as e:
-        print(f"Connection failed: {e}")
-
-if __name__ == "__main__":
-    run_test()
+        print(f"Connection Error: Is main.py running in Terminal 1?")
