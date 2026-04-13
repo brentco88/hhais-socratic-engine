@@ -37,7 +37,9 @@ To balance deep reasoning with operational velocity, HHaiS implements a dual-mod
 To prevent "Logic Thrashing" (infinite agent loops), HHaiS v3.0 implements the **Frustration Index**. 
 * **Logic:** If the dialectic tension between the Greek and Japanese agents fails to produce a semantic delta over 3 iterations, the FI triggers a "Circuit Breaker."
 * **Action:** The system terminates the debate and forces an immediate Sanskrit Firewall intervention to provide the most ethical path forward.
-
+### 🔗 Proof of Logic (Live Trace)
+Full telemetry and agentic reasoning trace available via LangSmith:
+https://smith.langchain.com/public/134c715b-c844-494c-9468-0f67cda4510a/r
 ---
 
 ## 🛠️ Tech Stack & Roadmap
