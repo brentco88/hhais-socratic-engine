@@ -5,51 +5,45 @@
 ## The Challenge
 Autonomous agents often enter "infinite loops" or "logic thrashing" when faced with complex philosophical paradoxes, leading to high token costs and system instability.
 
-## The Solution: The Socratic Circuit Breaker
-This engine implements a **deterministic state machine** that forces a dialectic tension between:
-- **Greek Agent:** Logical Refutation & First Principles.
-- **Japanese Agent:** Contextual Awareness & Interdependency.
-- **Sanskrit Agent (The Firewall):** Monitors the "Logic Path" and forces a conclusion if the state exceeds 4 iterations.
+# HHaiS Sovereign Engine v3.0
+### Multi-Intelligence Model Pipeline (M.I.M.P.) for Edge Governance
 
-## Tech Stack
-- **LangGraph:** Orchestrating the cyclical agent flow.
-- **FastAPI:** Serving the engine as a high-speed API.
-- **LangSmith:** Full observability and telemetry.
-
-## Proof of Logic (Live Trace)
-https://smith.langchain.com/public/134c715b-c844-494c-9468-0f67cda4510a/r
+HHaiS (Human Heart AI) v3.0 is a deterministic state machine designed to move AI from "Generative Chat" to "Sovereign Logic." It utilizes specialized Small Language Models (SLMs) to perform a multi-stage Socratic audit on high-stakes premises, optimized for the **NVIDIA Jetson Orin Nano (8GB)**.
 
 ---
-## v2.0 Update: Persistent Memory & State Management
-The Socratic Engine now features a **Persistent State Machine** using LangGraph's `MemorySaver`. 
 
-### Key Innovations:
-- **Thread-Based Persistence:** Each conversation is assigned a unique `thread_id`, allowing the Greek and Japanese agents to "remember" previous logic paths and reference them in follow-up inquiries.
-- **State Reducer Architecture:** Implemented `Annotated` state with `operator.add` to ensure a non-destructive message history (Append-only logic).
-- **Deterministic Loop Control:** Added a synchronized `step_count` scoreboard that triggers the Sanskrit Firewall after 3 rounds of dialectic tension, ensuring 100% protection against infinite recursive loops.
+## 🕹️ The Cognitive Gearbox (System Modes)
 
-### Technical Achievements:
-- Resolved "Agentic Amnesia" by maintaining a shared state across multiple API calls.
-- Optimized cost-governance by enforcing a hard-stop boundary on autonomous agent cycles.
----
+To balance deep reasoning with operational velocity, HHaiS implements a dual-mode trigger:
 
-## ### The HHaiS Master Prompt Philosophy: Intentional Friction
-
-In a 2026 landscape dominated by "Vending Machine" AI—where speed is prioritized over substance—**HHaiS (Human Heart AI)** takes a different path. We believe that high-stakes leadership requires **Intentional Friction.**
-
-### The "Cognitive Gearbox"
-The HHaiS Master Prompt is architected as a dual-mode system, allowing the user to choose their logical "gear":
-
-1. **Strategic Mode (The Socratic Probe):**
-   - **Default State:** All queries are subjected to a three-agent dialectic (Greek, Japanese, and Sanskrit).
-   - **Purpose:** To drive human curiosity, challenge cognitive biases, and ensure that "Efficiency" never comes at the cost of "Empathy."
-   - **Governance:** A deterministic "Sanskrit Firewall" prevents logic-thrashing and enforces conclusion.
-
-2. **Tactical Mode (The PAL Bypass):**
-   - **Trigger:** Prefixing a query with `PAL:` (Prompt-Action-Logic).
-   - **Purpose:** For low-stakes, high-velocity execution where immediate answers are required.
-   - **Design:** Bypasses the heuristic debate layer for a direct, empathetic summary.
-
-> **"We don't build AI that thinks for you; we build AI that thinks *with* you."**
+* **Strategic Mode (Default):** A 4-node dialectic pipeline (Greek → Japanese → Sanskrit → Polish). Used for ethical dilemmas and strategic planning.
+* **Tactical Mode (PAL Bypass):** Triggered by prefixing a query with `PAL:`. Bypasses the debate layer for immediate execution via the Precision Layer.
 
 ---
+
+## 🧠 Model Selection Logic (The M.I.M.P. Stack)
+
+| Node | Persona | Model | Role |
+| :--- | :--- | :--- | :--- |
+| **Agent A** | Greek | DeepSeek-R1 (1.5B) | **Logic Auditor:** Socratic friction & fallacy detection. |
+| **Agent B** | Japanese | Sea Lion v3 (8B) | **Context Weaver:** Cultural harmony & interdependence (*Wa*). |
+| **Agent C** | Sanskrit | DeepSeek-R1 (1.5B) | **Ethical Governor:** Finding the measure (*Ma*) and synthesis. |
+| **Agent D** | Polish | Ministral-3 (3B) | **Deterministic Compiler:** Rule-complete execution command. |
+
+---
+
+## 📊 Telemetry: The Frustration Index (FI)
+
+To prevent "Logic Thrashing" (infinite agent loops), HHaiS v3.0 implements the **Frustration Index**. 
+* **Logic:** If the dialectic tension between the Greek and Japanese agents fails to produce a semantic delta over 3 iterations, the FI triggers a "Circuit Breaker."
+* **Action:** The system terminates the debate and forces an immediate Sanskrit Firewall intervention to provide the most ethical path forward.
+
+---
+
+## 🛠️ Tech Stack & Roadmap
+* **Orchestration:** LangGraph (Transitioning to GraphBit for Rust-native performance).
+* **Inference:** Ollama (Local/Sovereign).
+* **Platform:** NVIDIA Jetson Orin Nano (8GB Unified Memory).
+* **Target:** TSCM-compliant autonomous decision governance.
+
+*"We don't build AI that thinks for you; we build AI that thinks with you."*
