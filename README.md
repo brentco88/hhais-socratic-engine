@@ -52,4 +52,13 @@ HHaiS is a **Generalized Consensus Framework**. The 4-agent M.I.M.P. architectur
 * **Inference:** Ollama (Local/Sovereign).
 * **Platform:** NVIDIA Jetson Orin Nano (8GB Unified Memory).
 
+## 🧬 The Evolution of Logic: M.I.M.P. v5.1 – v5.2
+
+| Phase | Date | Status | Technical Outcome | Proof of Logic |
+| :--- | :--- | :--- | :--- | :--- |
+| **v5.1** | April 15, 2026 | **Logic Instability** | Established Telemetry. Identified RAM-induced "Context Drift." | [Trace Link 1] https://smith.langchain.com/public/ea5fdabc-1b9b-4b97-9dab-97b1cf36d8bd/r
+| **v5.2** | April 16, 2026 | **Operational** | Implemented **RAM-Relief Hybrid Pipeline**. Successfully synthesized Directive. | [Trace Link 2] |https://smith.langchain.com/public/7d085db9-f02b-4142-8861-cccb0a653b8c/r
+
+> **Engineering Note:** The v5.2 cycle prioritized data integrity over UI stability. On 8GB RAM edge hardware, the system successfully transmits telemetry to LangSmith before the OS triggers an OOM process termination, ensuring the "Sovereign Receipt" is preserved.
+
 *"We don't build AI that thinks for you; we build AI that thinks with you."*
